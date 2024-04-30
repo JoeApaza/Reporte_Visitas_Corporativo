@@ -58,17 +58,16 @@ def leer_html(ruta_html,dataframe,dataframe2,dataframe3):
 def enviar_correo(html,Ruta_libro):
     outlook= win32.Dispatch('outlook.application')
     mail=outlook.createitem(0)
-    mail.subject="Reporte de Visitas Corporativas al "+dia+"."+mes+"."+año+""
+    mail.subject="ASUNTO"
     attachment = os.path.abspath(Ruta_libro)
     mail.Attachments.Add(attachment)
-    #mail.to='joel.maita@claro.com.pe'
-    mail.to='cobranzacorporativa@claro.com.pe'
-    mail.CC='joel.maita@claro.com.pe;maria.chumpitaz@claro.com.pe;rlavado@claro.com.pe;ysabel.marquez@claro.com.pe;jannina.romero@claro.com.pe'
+    mail.to='CORREOS'
+    mail.CC='COPIA'
     mail.HTMLBody=html
     #mail.SentOnBehalfOfName = 'joel.maita@claro.com.pe'
     #$mail.SentOnBehalfOfName = 'recuperacorp@claro.com.pe'
     mail.GetInspector 
     mail.Send()
-    logging.info(f"Informe de recaudacion Corporativa enviado correctamente" )
+    logging.info(f"ENVIADO" )
 
 
