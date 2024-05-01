@@ -1,5 +1,6 @@
-# Python : REPORTE PYTHON Y HTML - VISITAS
+# REPORTE VISITAS CORPORATIVAS
 
+# Python y HTML:
 ## Crear un entorno virtual:
 
 `python -m virtualenv venv`
